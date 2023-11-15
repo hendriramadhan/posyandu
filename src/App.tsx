@@ -8,6 +8,7 @@ import { Masuk } from "./pages/Masuk";
 import { MyNav } from "./components/MyNav";
 import inb from "./assets/ibu dan bayi.png";
 import "./assets/index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
