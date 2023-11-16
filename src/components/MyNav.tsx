@@ -29,7 +29,7 @@ export function MyNav() {
       <Navbar
         fixed="top"
         expand="xl"
-        className={changeColor ? "color-active" : ""}
+        className={changeColor ? "color-active" : "bg-body-tertiary"}
       >
         <Container>
           <Navbar.Brand href="#home" className="text-uppercase fs-5">
@@ -37,29 +37,28 @@ export function MyNav() {
               alt="logo"
               src={logo}
               className=" d-inline-block align-center "
-            />{" "}
-            React Bootstrap
+            />
+            Posyandu
           </Navbar.Brand>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" className="" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="mx-auto fs-5 text-center">
               <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/daftar">Layanan</Nav.Link>
+              <Nav.Link href="#Layanan">Layanan</Nav.Link>
               <Nav.Link href="#Home">Blog</Nav.Link>
               <Nav.Link href="#Home">Kontak</Nav.Link>
             </Nav>
-            <Nav className="text-center">
-              <Button variant="light" className="rounded-4 fs-6">
+            <Nav className="mx-auto fs-5 text-center">
+              <Nav.Link
+                href="#Masuk"
+                className="navbar-expand-xl navbar-nav nav-link"
+              >
                 Masuk
-              </Button>
+              </Nav.Link>
               <Nav.Link
                 href="#Daftar"
-                className={
-                  changeColor
-                    ? "navbar-expand-xl navbar-nav nav-link"
-                    : "text-light"
-                }
+                className="navbar-expand-xl navbar-nav nav-link"
               >
                 Daftar
               </Nav.Link>

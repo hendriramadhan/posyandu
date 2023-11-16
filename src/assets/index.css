@@ -50,7 +50,7 @@
   text-transform: uppercase;
   font-weight: 600;
   color: var(--secondary-color);
-  padding: 10px 25px;
+  padding: 0px 25px;
 }
 
 .navbar .btn-light:hover {
@@ -61,42 +61,116 @@
 /* SYLE HOME  */
 
 .home {
-  position: relative;
-  z-index: 2;
-  height: 100vh;
+  display: block;
+  background: rgb(93, 3, 81);
+  background: linear-gradient(
+    137deg,
+    rgba(93, 3, 81, 1) 0%,
+    rgba(190, 11, 116, 1) 100%
+  );
 }
 
-.background-home {
-  position: absolute;
-  width: 100%;
-  /* bottom: -33px; */
-  z-index: 1;
-  height: 100vh;
+main {
+  /* margin-top: 2rem; */
+}
+
+.home section h2 {
+  font-size: 4rem;
 }
 
 .mom {
-  position: absolute;
-  width: 41.2%;
+  margin-top: 5rem;
+  /* position: absolute; */
+  width: 80%;
   /* z-index: 0; */
-  top: 204px;
-  left: 0px;
+  /* top: 204px; */
+  /* left: 0px; */
+  /* height: 100vh; */
 }
 
-@media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1700px !important;
+/* LAYANAN */
+
+.layanan {
+  background-image: url("../assets/anakimunisasi.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  box-shadow: inset 0px 10px 200px 50px #000;
+}
+
+.layanan h2 {
+  margin-top: 5rem;
+  font-size: 3.75rem;
+  font-weight: bold;
+}
+
+.layanan .row:nth-child(2) .col-md-3 .card {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+  color: var(--secondary-color);
+  width: 15rem;
+}
+
+.layanan .row:nth-child(2) .col-md-3 .card:hover {
+  /* From https://css.glass */
+  background: rgb(93, 3, 81);
+  background: linear-gradient(
+    137deg,
+    rgba(93, 3, 81, 1) 0%,
+    rgba(190, 11, 116, 1) 100%
+  );
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+  color: var(--secondary-color);
+  width: 15rem;
+}
+
+.layanan .row:nth-child(2) .col-md-3 img {
+  /* filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%); */
+  filter: invert(50%) sepia(36%) saturate(4977%) hue-rotate(276deg)
+    brightness(68%) contrast(104%);
+  width: 40%;
+  /* filter: invert(15%) sepia(32%) saturate(7456%) hue-rotate(302deg)
+    brightness(75%) contrast(110%); */
+}
+
+.layanan .row:nth-child(2) .col-md-3 img:hover {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(238deg)
+    brightness(102%) contrast(105%);
+}
+
+@media (max-width: 992px) {
+  .home section h2 {
+    font-size: 3rem;
   }
 
   .mom {
-    position: absolute;
-    width: 50%;
-    /* z-index: 0; */
-    top: 204px;
-    left: 0px;
+    display: block;
+    margin: inline;
+  }
+}
+
+@media (max-width: 575px) {
+  .home section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .home section p {
+    text-align: center;
+    font-size: 1rem !important;
+  }
+
+  .mom {
+    margin-top: 4rem;
+    width: 70%;
+    display: block;
+    margin: inline;
   }
 }
