@@ -43,13 +43,13 @@ export function MyNav() {
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="navbarScroll">
-            <Nav className="mx-auto fs-5">
+            <Nav className="mx-auto fs-5 text-center">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/daftar">Layanan</Nav.Link>
               <Nav.Link href="#Home">Blog</Nav.Link>
               <Nav.Link href="#Home">Kontak</Nav.Link>
             </Nav>
-            <Nav className="">
+            <Nav className="text-center">
               <Button variant="light" className="rounded-4 fs-6">
                 Masuk
               </Button>
