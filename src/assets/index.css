@@ -104,6 +104,15 @@ main {
   font-weight: bold;
 }
 
+.layanan .row:nth-child(2) {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+  /* grid-auto-flow: column; */
+  /* gap: 4px; */
+  /* align-items: center;
+  justify-items: center; */
+}
+
 .layanan .row:nth-child(2) .col-md-3 .card {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.55);
@@ -113,6 +122,12 @@ main {
   -webkit-backdrop-filter: blur(2.1px);
   color: var(--secondary-color);
   width: 15rem;
+}
+
+.layanan .row:nth-child(2) .col-md-3 .card img {
+  width: 50%;
+  height: 100px;
+  object-fit: contain;
 }
 
 .layanan .row:nth-child(2) .col-md-3 .card:hover {

@@ -9,7 +9,7 @@ export function Home() {
       <div className="home">
         <section className="w-100 min-vh-100 d-flex align-items-center">
           <Container>
-            <Row className="mt-5 d-flex align-items-center">
+            <Row className="mt-5 d-flex align-items-center mb-5">
               <Col md={6}>
                 <img
                   className="img-fluid mom"
