@@ -12,7 +12,7 @@ export function Home() {
             <Row className="mt-5 d-flex align-items-center mb-5">
               <Col md={6}>
                 <img
-                  className="img-fluid mom"
+                  className="img-fluid mx-auto mom"
                   src={inb}
                   alt="Gambar Ibu dan Bayi"
                 />

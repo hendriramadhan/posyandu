@@ -7,7 +7,7 @@ import diare from "../assets/lambung.png";
 
 export function Layanan() {
   return (
-    <div className="layanan">
+    <div className="layanan pb-5">
       <Container>
         <Row className="justify-content-md-center">
           <Col md={6}>
@@ -16,34 +16,34 @@ export function Layanan() {
             </h2>
           </Col>
         </Row>
-        <Row className="d-flex justify-content-center flex-wrap mt-5 gap-2">
-          <Col md={3} className="">
-            <Card style={{ width: "15rem" }} className="mt-4">
+        <Row className="d-flex justify-content-center flex-wrap mt-5 gap-5">
+          <Col md={3} className="mx-auto">
+            <Card style={{ width: "15rem" }} className="mt-4 mx-auto">
               <img src={mother} alt="" className="mx-auto my-1 mt-3" />
               <h3 className="pt-2 fs-5 text-center mb-3">Ibu & Anak</h3>
             </Card>
           </Col>
-          <Col md={3} className="">
-            <Card style={{ width: "15rem" }} className="mt-4">
+          <Col md={3} className="mx-auto">
+            <Card style={{ width: "15rem" }} className="mt-4 mx-auto">
               <img src={kb} alt="" className="mx-auto my-1 mt-3 " />
               <h3 className="pt-2 fs-5 text-center mb-3">Program KB</h3>
             </Card>
           </Col>
-          <Col md={3} className="">
-            <Card style={{ width: "15rem" }} className="mt-4">
+          <Col md={3} className="mx-auto">
+            <Card style={{ width: "15rem" }} className="mt-4 mx-auto">
               <img src={inj} alt="" className="mx-auto my-1 mt-3 " />
               <h3 className="pt-2 fs-5 text-center mb-3">Imunisasi Anak</h3>
             </Card>
           </Col>
-          <Col md={3} className="">
-            <Card style={{ width: "15rem" }} className="mt-4">
-              <img src={baby} alt="" className="mx-auto my-1 mt-3 " />
+          <Col md={3} className="mx-auto">
+            <Card style={{ width: "15rem" }} className="mt-4 mx-auto">
+              <img src={baby} alt="" className="mx-auto mt-3 " />
               <h3 className="pt-2 fs-5 text-center mb-3">Gizi Anak</h3>
             </Card>
           </Col>
-          <Col md={3} className="">
-            <Card style={{ width: "15rem" }} className="mt-4">
-              <img src={diare} alt="" className="mx-auto my-1 mt-3 " />
+          <Col md={3} className="mx-auto">
+            <Card style={{ width: "15rem" }} className="mt-4 mx-auto">
+              <img src={diare} alt="" className="mx-auto mt-3 " />
               <h3 className="pt-2 fs-5 text-center mb-3">
                 Penanggulangan Diare
               </h3>
